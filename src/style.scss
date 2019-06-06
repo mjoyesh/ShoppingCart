@@ -1,0 +1,728 @@
+//------------NAV BAR------------
+.btn-info {
+  color: #fff;
+  background-color: #70a5e2;
+  box-shadow: 1px 1px 4px rgb(128, 125, 125);
+  border-color: #17a2b8;
+  padding: 4px 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  &:hover{
+    background-color: #3d6cb4;
+  }
+}
+
+.btn-danger{
+  background: rgb(85, 143, 209);
+  border: 1px solid rgb(42, 28, 236);
+  box-shadow: 1px 1px 10px rgb(82, 79, 79);
+  &:hover{
+    background : rgb(36, 75, 161);
+    border: 1px solid #000;
+  }
+}
+.cart-notify{
+  position: absolute;
+  top: 58px;
+  right: 2%;
+  width: 15%;
+  height: 100%;
+  z-index: 9;
+}
+.badge-span{
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  z-index: 100;
+}
+.cart-badge{
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  &:focus{
+    outline:  none;
+  }
+}
+.hover-span{
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.badge-div{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.table-display{
+ padding-left: 5px;
+ padding-right: 5px;
+}
+.fa-trash-alt{
+  cursor: pointer;
+  color: red;
+  margin-left: 15px;
+}
+.hover-td{
+  background: #fff;
+}
+.hover-table-body{
+  box-shadow: 1px 1px 5px 2px rgb(146, 141, 141);
+  border-radius: 5px;
+}
+
+//-----------PRODUCT-------------
+.image{
+  transition: transform .2s;
+}
+.image:hover{
+  transform: scale(1.5);
+}
+.card-img-top{
+  &.animate {
+    animation-name: cardSwipe;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes cardSwipe{
+  0%{
+      right: 100%;
+  }
+  100%{
+      left: 0;
+  }
+}
+
+.body-bg{
+  background : #fff;
+}
+
+//------------PRODUCT LIST---------
+.product-wrapper{
+  max-width: 900px;
+  width: 100%;
+  margin:0 auto;
+  padding-top: 60px;
+}
+
+.colorBorder{
+  border-radius: 3px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.selectTableSize{
+  border-radius: 3px;
+  padding: 5px 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+th{
+  background: rgb(112, 165, 226);
+}
+.selectSize{
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(218, 214, 214);
+}
+// -----------RADIO BUTTON----------
+.radio-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  overflow: hidden;
+  height: 32px;
+  width: 28px;
+  left: 0.2px;
+  bottom: 1px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 8px;
+  left: 6.2px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(218, 214, 214);
+}
+
+// ---------CART MENU-----------
+$theme-grey : #473f5a;
+$navy-blue : #324d5d;
+
+
+%font{
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+}
+.Cart{
+    // opacity: 0;
+    &:hover{
+        opacity: 1;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 18px;
+}
+.imageTd{
+  border: 1px solid #fff;
+  text-align: center;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: 2px 1px 20px 2px #ccc9c9;
+  .card-footer{
+    border: none;
+    p{
+      @extend %font;
+      color: $theme-grey;
+      font-weight: bold;  
+      &:first-child{
+        color: #000;
+      }
+    }
+  }
+  
+  .hideBlock{
+    overflow: hidden;
+  }
+
+  .displayBlock:hover{
+    overflow: initial;
+  }
+
+  .buttonNav{
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    cursor: pointer;
+    opacity: 1;
+    .cartmenu{
+      width: 30px;
+      height: 32px;
+      border-radius: 2px;
+      float: left;
+      ul{
+        position: relative;
+        padding: 0;
+        margin-top: -32px;
+        box-shadow: 1px 1px 1px 1px rgb(218, 214, 214);
+        li{
+          height: 32px;
+          width: 30px;
+          border: 1px solid rgb(153, 150, 150);
+          list-style-type: none;
+          box-shadow: 1px 1px 1px 1px rgb(218, 214, 214);
+          &:hover{
+            background: rgb(179, 176, 176);
+          }
+        }
+      }
+    }
+    select{
+      @extend %font;
+      background: none;
+      border: 1px solid rgb(153, 150, 150);
+      padding: 4.7px 5px;
+      color: #333;
+      border-radius: 6px;
+      float: left;
+      font-size: 14px;
+      outline: none;
+      font-family: 'Open Sans', sans-serif;
+      &:hover{
+        background: rgb(159, 178, 241);
+      }
+    }
+  }
+}
+// -------------SHOPPING CART------------
+
+.logo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.qty{
+    border: 1px solid rgb(194, 194, 194);
+    padding: 5px 14px;
+}
+
+.qty-border{
+  border:none !important;
+}
+
+.fa-times{
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.wines{
+  font-weight: bold;
+}
+.shopHeading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tableHeadings{
+    text-align: center;
+}
+
+.tableWrapper{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tableData{
+    text-align: center;
+    padding-top: 43px !important;
+}
+.addSubBtn{
+  width: 25%;
+  border-radius: 3px;
+}
+.btn-dis{
+  cursor: not-allowed;
+}
+.quantity-btn{
+  padding: 5px 10px;
+}
+
+.subtotal{
+    float: right;
+}
+.price-heading{
+  width: 12%;
+}
+.cart-img{
+  height: 100px;
+  width: 100px;
+}
+.cart-img-container{
+  display: flex;
+  border-top: none !important;
+  justify-content: center;
+}
+.checkoutBtn{ 
+    width: 67%;
+    display: flex;
+    justify-content: space-around;
+    margin: 65px auto;
+}
+.table-bordered{
+  box-shadow: 1px 1px 10px rgb(128, 125, 125);
+}
+
+.empty-cart{
+  text-align: center;
+  padding-top: 30px;
+}
+.shopping-cart-img{
+  height: 25%;
+  width: 25%;
+}
+.cart-img-container{
+  margin: 0 auto;
+}
+.cart-buttons{
+  cursor: not-allowed;
+}
+//--------SCROLL BAR--------
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #1d69c0;;
+  border-radius: 10px;
+}
+
+//-----------FORM----------
+
+.submitted{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #fff;
+  color: rgb(54, 74, 190);
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 4px rgb(131, 129, 129);
+  transition: transform .2s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.btn-continue{
+  margin-top: 20px;
+  font-size: 15px;
+}
+.form-details{
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto; 
+}
+.checkLabel{
+  margin-bottom: 0;
+  display: block;
+  margin-top: 10px;
+}
+.checkoutHead{
+  text-align: center;
+}
+.billHead{
+  padding: 5px 10px;
+  position: absolute;
+  top: -18px;
+  background: #fff;
+  font-size: 20px;
+}
+.billing{
+  border-radius: 3px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 4px 2px 7px 5px rgba(46, 113, 201, 0.521);
+  margin-top: 40px;
+}
+.input-fields{
+  border-radius: 3px;
+  border: none;
+  border: 1px solid rgb(152, 169, 247);
+  padding: 1px 10px;
+}
+
+.billSame{
+  margin-top: 20px;
+  margin-bottom: 10px;
+    display: block;
+    padding-left: 15px;
+    text-indent: -8px;
+    input {
+      vertical-align: bottom;
+      position: relative;
+      top: -5px;
+      *overflow: hidden;
+    }
+    
+}
+.billCursor{
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.shipHead{
+  padding: 5px 10px;
+  position: absolute;
+  top: -18px;
+  background: #fff; 
+}
+.shipping{
+  position: relative;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 2px 7px 5px rgba(46, 113, 201, 0.521);
+}
+.checkBilling{
+margin-left: 10px;
+height: 17px;
+width: 17px;
+
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.country{
+  width: 31%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 150, 233);
+  font-weight: 500;
+  width: 34%;
+  padding: 6px 0;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+.btn-checkout{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 7px 36px;
+  cursor: wait;
+}
+.errors{
+  padding-left: 10px; 
+  color : red;
+}
+
+//----------SUBMIT DETAILS-----------
+
+.billDetailsSubmit{
+  max-width: 500px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 4px rgb(131, 129, 129);
+}
+
+.your-details-head{
+  text-align: center;
+  color: rgb(36, 63, 214);
+  font-weight: bold;  
+}
+
+.user-details{
+color: rgb(36, 63, 214);
+font-size: 18px;  
+}
+
+.cart-item{
+color: rgb(36, 63, 214);
+font-size: 18px; 
+}
+.green-tick{
+  height: 20px;
+  width: 25px;
+  margin-bottom: 10px;
+}
+
+//---------CART HOVER----------
+
+.hoveredProducts{
+  position: absolute;
+  top : 10%;
+  right: 2%;
+}
+
+.head-hover1{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 5px;
+}
+
+.head-hover3{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+}
+
+.hover-image{
+  height: 60px;
+  width: 60px;
+}
+
+.hover-productName{
+  width: 20px;
+  text-align: center;
+}
+
+.hover-quantity{
+  text-align: center;
+}
+
+//----------CUSTOM CHECKBOX-----------
+.checkmark1 {
+  position: absolute;
+  top: 2px;
+  right: -4px;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1px solid rgb(74, 95, 218);
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.billCursor:hover input ~ .checkmark1 {
+  background-color: rgb(180, 197, 233);
+}
+
+/* When the checkbox is checked, add a blue background */
+.billCursor input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.billCursor input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.billCursor .checkmark1:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+//----------HEADER---------
+%header{
+  margin-top: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+.product-header{
+  @extend %header;
+  max-width: 905px;
+}
+.cart-header{
+  @extend %header;
+  max-width: 1030px;
+}
+.form-header{
+  @extend %header;
+  max-width: 1000px;
+}
+
+//-----------BREAD CRUMB--------
+
+  .breadcrumb{
+    background-color: #fff;
+  }
+  .breadcrumb-list1{
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 17px;
+    font-size: 19px;
+  }
+
+  .breadcrumb-list2{
+    font-size: 19px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .breadcrumb-list2-active{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+.breadcrumb {
+    li + li:before {
+      color: rgb(41, 83, 221) !important;
+      content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+) !important;
+      padding: 0 5px;
+  }
+} 
+.breadcrumb-prod{
+  max-width: 987px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+//--------PRODUCT DETAILS------------
+.description{
+  display: flex;
+  justify-content: space-around;
+}
+.image-desc{
+  width: 90%;
+}
+
+.image-border{
+  width: 87%;
+  height: 80%;
+  padding-left: 80px;
+}
+
+.prod-desc{
+  padding: 30px;
+  width: 90%;
+}
+
+.btn-prod-container{
+  width: 100%;
+  text-align: center;
+}
+.btn-prod{
+  width: 28%;
+  height: 50%;  
+}
+.price-desc{
+  font-size: 20px;
+}
+.prod-size{
+  margin: 0;
+  color: #3d6cb4;
+  font-weight: bold;
+}
+.description-prod{
+  text-align: justify;
+  width: 60%;
+}
+
+//------CUSTOM SELECT DROPDOWN------
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  .selectTableSize{
+    display : none;
+    outline: none;
+  }
+}
+
+//---------HEADER------------
+.shop-header{
+  padding-top: 10px;
+  background: rgb(100, 99, 99);
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.shop-header-container{
+  max-width: 872px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header-heading{
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
