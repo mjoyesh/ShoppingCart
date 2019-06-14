@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ShoppingCart/index/static/css/main.f06e1d15.chunk.css",
-    "main.js": "/ShoppingCart/index/static/js/main.80707a2c.chunk.js",
-    "main.js.map": "/ShoppingCart/index/static/js/main.80707a2c.chunk.js.map",
-    "runtime~main.js": "/ShoppingCart/index/static/js/runtime~main.7670c948.js",
-    "runtime~main.js.map": "/ShoppingCart/index/static/js/runtime~main.7670c948.js.map",
-    "static/css/2.266e55a5.chunk.css": "/ShoppingCart/index/static/css/2.266e55a5.chunk.css",
-    "static/js/2.519ce98f.chunk.js": "/ShoppingCart/index/static/js/2.519ce98f.chunk.js",
-    "static/js/2.519ce98f.chunk.js.map": "/ShoppingCart/index/static/js/2.519ce98f.chunk.js.map",
-    "index.html": "/ShoppingCart/index/index.html",
-    "precache-manifest.595fea9417bd95cf0c1c998bf814491a.js": "/ShoppingCart/index/precache-manifest.595fea9417bd95cf0c1c998bf814491a.js",
-    "service-worker.js": "/ShoppingCart/index/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/ShoppingCart/index/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.f06e1d15.chunk.css.map": "/ShoppingCart/index/static/css/main.f06e1d15.chunk.css.map"
+    "main.css": "/ShoppingCart/static/css/main.f06e1d15.chunk.css",
+    "main.js": "/ShoppingCart/static/js/main.37d11119.chunk.js",
+    "main.js.map": "/ShoppingCart/static/js/main.37d11119.chunk.js.map",
+    "runtime~main.js": "/ShoppingCart/static/js/runtime~main.9998e164.js",
+    "runtime~main.js.map": "/ShoppingCart/static/js/runtime~main.9998e164.js.map",
+    "static/css/2.266e55a5.chunk.css": "/ShoppingCart/static/css/2.266e55a5.chunk.css",
+    "static/js/2.519ce98f.chunk.js": "/ShoppingCart/static/js/2.519ce98f.chunk.js",
+    "static/js/2.519ce98f.chunk.js.map": "/ShoppingCart/static/js/2.519ce98f.chunk.js.map",
+    "index.html": "/ShoppingCart/index.html",
+    "precache-manifest.350f43d81ade3cdddab6eb178d7f1e1f.js": "/ShoppingCart/precache-manifest.350f43d81ade3cdddab6eb178d7f1e1f.js",
+    "service-worker.js": "/ShoppingCart/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/ShoppingCart/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.f06e1d15.chunk.css.map": "/ShoppingCart/static/css/main.f06e1d15.chunk.css.map"
   }
 }
